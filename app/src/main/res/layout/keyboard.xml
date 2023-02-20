@@ -6,14 +6,12 @@
     >
 
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="446dp"
-        android:paddingLeft="10dp"
-
-        android:columnCount="4"
-        android:rowCount="5"
         android:id="@+id/layoutkey"
-        >
+        android:layout_width="wrap_content"
+        android:layout_height="451dp"
+        android:layout_marginLeft="8dp"
+        android:columnCount="4"
+        android:rowCount="5">
 
         <Button
             android:id="@+id/btnAc"
@@ -24,21 +22,6 @@
             android:layout_marginLeft="5dp"
             android:backgroundTint="@color/light_green"
             android:text="Ac"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-
-
-            />
-
-        <Button
-            android:id="@+id/btnBraket"
-            android:layout_width="wrap_content"
-            android:layout_height="89dp"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:layout_marginLeft="5dp"
-            android:backgroundTint="@color/teal_700"
-            android:text="( )"
             android:textColor="@color/black"
             android:textSize="20dp"
 
@@ -271,10 +254,10 @@
             android:id="@+id/btnDelte"
             android:layout_width="wrap_content"
             android:layout_height="89dp"
-            android:layout_row="4"
-            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_column="1"
             android:layout_marginLeft="5dp"
-            android:backgroundTint="@color/grey"
+            android:backgroundTint="@color/teal_700"
             android:text="DEL"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -285,9 +268,11 @@
         <Button
             android:id="@+id/btnResult"
             android:layout_width="wrap_content"
-            android:layout_height="89dp"
+            android:layout_height="88dp"
             android:layout_row="4"
-            android:layout_column="3"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
             android:layout_marginLeft="5dp"
             android:backgroundTint="@color/teal_700"
             android:text="="
@@ -295,6 +280,7 @@
             android:textSize="20dp"
 
             />
+
 
     </GridLayout>
 
